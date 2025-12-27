@@ -1,0 +1,221 @@
+0, ,<,left_1
+
+left_1,0,<,left_1
+left_1,1,<,left_1
+left_1, ,<,left_2
+
+left_2,0,<,left_2
+left_2,1,<,left_2
+left_2, ,>,look
+
+look,1, ,shift_1
+look,0, ,shift_0
+
+shift_1, ,>,keep_1
+shift_0, ,>,keep_0
+
+keep_1,1,>,keep_1
+keep_1,0,>,keep_1
+keep_1, ,>,pick_1
+
+keep_0,1,>,keep_0
+keep_0,0,>,keep_0
+keep_0, ,>,pick_0
+
+pick_1,1, ,shift_1_1
+pick_1,0, ,shift_1_0
+
+pick_0,1, ,shift_0_1
+pick_0,0, ,shift_0_0
+
+shift_1_1,1,>,shift_1_1
+shift_1_1,0,>,shift_1_1
+shift_1_1, ,>,pick_1_1
+
+shift_1_0,1,>,shift_1_0
+shift_1_0,0,>,shift_1_0
+shift_1_0, ,>,pick_1_0
+
+shift_0_1,1,>,shift_0_1
+shift_0_1,0,>,shift_0_1
+shift_0_1, ,>,pick_0_1
+
+shift_0_0,1,>,shift_0_0
+shift_0_0,0,>,shift_0_0
+shift_0_0, ,>,pick_0_0
+
+pick_1_1,1,>,pick_1_1
+pick_1_1,0,>,pick_1_1
+pick_1_1, ,>,put_1_1
+
+pick_1_0,1,>,pick_1_0
+pick_1_0,0,>,pick_1_0
+pick_1_0, ,>,put_1_0
+
+pick_0_1,1,>,pick_0_1
+pick_0_1,0,>,pick_0_1
+pick_0_1, ,>,put_0_1
+
+pick_0_0,1,>,pick_0_0
+pick_0_0,0,>,pick_0_0
+pick_0_0, ,>,put_0_0
+
+put_1_1,1,>,put_1_1
+put_1_1,0,>,put_1_1
+put_1_1, ,1,left_1_1
+
+put_1_0,1,>,put_1_0
+put_1_0,0,>,put_1_0
+put_1_0, ,0,left_1_0
+
+put_0_1,1,>,put_0_1
+put_0_1,0,>,put_0_1
+put_0_1, ,0,left_0_1
+
+put_0_0,1,>,put_0_0
+put_0_0,0,>,put_0_0
+put_0_0, ,0,left_0_0
+
+left_1_1,1,<,left_1_1
+left_1_1,0,<,left_1_1
+left_1_1, ,<,left1_1_1
+
+left_1_0,1,<,left_1_0
+left_1_0,0,<,left_1_0
+left_1_0, ,<,left1_1_0
+
+left_0_1,1,<,left_0_1
+left_0_1,0,<,left_0_1
+left_0_1, ,<,left1_0_1
+
+left_0_0,1,<,left_0_0
+left_0_0,0,<,left_0_0
+left_0_0, ,<,left1_0_0
+
+left1_1_1,1,<,left1_1_1
+left1_1_1,0,<,left1_1_1
+left1_1_1, ,<,left2_1_1
+
+left1_1_0,1,<,left1_1_0
+left1_1_0,0,<,left1_1_0
+left1_1_0, ,<,left2_1_0
+
+left1_0_1,1,<,left1_0_1
+left1_0_1,0,<,left1_0_1
+left1_0_1, ,<,left2_0_1
+
+left1_0_0,1,<,left1_0_0
+left1_0_0,0,<,left1_0_0
+left1_0_0, ,<,left2_0_0
+
+left2_1_1,1,<,left2_1_1
+left2_1_1,0,<,left2_1_1
+left2_1_1, ,<,left3_1_1
+
+left2_1_0,1,<,left2_1_0
+left2_1_0,0,<,left2_1_0
+left2_1_0, ,<,left3_1_0
+
+left2_0_1,1,<,left2_0_1
+left2_0_1,0,<,left2_0_1
+left2_0_1, ,<,left3_0_1
+
+left2_0_0,1,<,left2_0_0
+left2_0_0,0,<,left2_0_0
+left2_0_0, ,<,left3_0_0
+
+left3_1_1,1,<,left3_1_1
+left3_1_1,0,<,left3_1_1
+left3_1_1, ,1,right_1
+
+left3_1_0,1,<,left3_1_0
+left3_1_0,0,<,left3_1_0
+left3_1_0, ,1,right_0
+
+left3_0_1,1,<,left3_0_1
+left3_0_1,0,<,left3_0_1
+left3_0_1, ,0,right_1
+
+left3_0_0,1,<,left3_0_0
+left3_0_0,0,<,left3_0_0
+left3_0_0, ,0,right_0
+
+right_1,1,>,look_1
+right_1,0,>,look_1
+
+right_0,1,>,look_0
+right_0,0,>,look_0
+
+look_1,1, ,right_1_1
+look_1,0, ,right_1_0
+look_1, ,>,p_1
+
+look_0,1, ,right_0_1
+look_0,0, ,right_0_0
+look_0, ,>,p_0
+
+p_1,1,>,p_1
+p_1,0,>,p_1
+p_1, ,1,end
+
+p_0,1,>,p_0
+p_0,0,>,p_0
+p_0, ,0,end
+
+end,1,>,end
+end,0,>,end
+end, ,>,end_1
+
+end_1,1,>,end_1
+end_1,0,>,end_1
+end_1, ,#,end_1
+
+right_1_1, ,>,k_1_1
+right_1_0, ,>,k_1_0
+
+right_0_1, ,>,k_0_1
+right_0_0, ,>,k_0_0
+
+k_1_1,1,>,k_1_1
+k_1_1,0,>,k_1_1
+k_1_1, ,>,p_1_1
+
+k_1_0,1,>,k_1_0
+k_1_0,0,>,k_1_0
+k_1_0, ,>,p_1_0
+
+k_0_1,1,>,k_0_1
+k_0_1,0,>,k_0_1
+k_0_1, ,>,p_0_1
+
+k_0_0,1,>,k_0_0
+k_0_0,0,>,k_0_0
+k_0_0, ,>,p_0_0
+
+p_1_1,1,>,p_1_1
+p_1_1,0,>,p_1_1
+p_1_1, ,1,s_1
+
+p_1_0,1,>,p_1_0
+p_1_0,0,>,p_1_0
+p_1_0, ,1,s_0
+
+p_0_1,1,>,p_0_1
+p_0_1,0,>,p_0_1
+p_0_1, ,0,s_1
+
+p_0_0,1,>,p_0_0
+p_0_0,0,>,p_0_0
+p_0_0, ,0,s_0
+
+s_1,1,>,l_1
+s_1,0,>,l_1
+
+s_0,1,>,l_0
+s_0,0,>,l_0
+
+l_1,1, ,shift_1_1
+l_1,0, ,shift_1_0
+
+l_0,1, ,shift_0_1
+l_0,0, ,shift_0_0
